@@ -3,10 +3,21 @@
 @use "typography" as fonts;
 
 :root {
-    font-size: util.rem(16);
+    font-size: fonts.$mobile-l;
+    font-family: fonts.$font-fam;
+    font-weight: fonts.$regular;
+    line-height: fonts.$line-m;
 }
 
 body {
     margin: 0;
-    background-color: var(--gray);
+    background-color: var(--orange);
+    background-image: url("../../../images/bg-intro-mobile.png");
+}
+
+main {
+    display: grid;
+    grid-template: repeat(3, max-content) / 1fr;
+
+    margin: 0 1.5rem;
 }

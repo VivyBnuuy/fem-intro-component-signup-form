@@ -1,0 +1,19 @@
+@use "typography" as fonts;
+
+.section-learn {
+    color: var(--white);
+    text-align: center;
+
+    margin: 4rem 0 3rem;
+
+    &__header {
+        font-size: fonts.$mobile-xl;
+        font-weight: fonts.$bold;
+        line-height: fonts.$line-l;
+    }
+
+    &__paragraph {
+        font-size: fonts.$mobile-l;
+        font-weight: fonts.$medium;
+    }
+}

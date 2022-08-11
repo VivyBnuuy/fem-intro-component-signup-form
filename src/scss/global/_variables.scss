@@ -1,4 +1,16 @@
 // Colors
 :root {
-    --gray: #333333;
+    --orange: #FF7979;
+    --light-green: #77E2B3;
+    --green: #38CC8B;
+    --light-blue: #BAB7D4;
+    --blue: #5E54A4;
+    --dark-gray: #3D3B48;
+    --light-gray: #DEDEDE;
+    --white: #FFFFFF;
+
+    --shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+
+    --button-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.09);
+    --button-shadow-active: inset 0px 0px 0px rgba(0, 0, 0, 0.09);
 }

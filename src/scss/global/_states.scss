@@ -1,0 +1,22 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "../mobile/typography" as fonts;
+
+.form {
+    &__input:focus {
+        outline: none;
+
+        border-color: var(--blue);
+    }
+
+    &__button:hover {
+        cursor: pointer;
+        
+        background-color: var(--light-green);
+    }
+
+    &__button:active {
+        box-shadow: var(--button-shadow-active);
+        transform: translateY(4px);
+    }
+}

@@ -1,0 +1,89 @@
+@use "../util/functions" as util;
+@use "../global/variables" as var;
+@use "typography" as fonts;
+
+.form {
+    background-color: var(--white);
+    
+    border-radius: 0.5rem;
+
+    box-shadow: var(--shadow);
+
+    padding: 1.5rem;
+
+    margin: 0 0 3rem 0;
+
+    &__input {
+        // Styling for entered text
+        color: var(--dark-gray);
+        font-weight: fonts.$semi-bold;
+        font-size: fonts.$mobile-s;
+        font-family: fonts.$font-fam;
+        letter-spacing: fonts.$input-spacing;
+
+        opacity: 1;
+
+        // Input styling
+        border-style: solid;
+        border-color: var(--light-gray);
+        border-width: util.rem(1);
+        border-radius: 0.25rem;
+
+        padding: 1rem;
+        margin: 0 0 1rem 0;
+
+        width: calc(100% - 2.1rem);
+
+        caret-color: var(--blue);
+    }
+
+    &__input::placeholder {
+        color: var(--dark-gray);
+        font-weight: fonts.$semi-bold;
+        font-size: fonts.$mobile-s;
+        font-family: fonts.$font-fam;
+        letter-spacing: fonts.$input-spacing;
+
+        opacity: 0.75;
+    }
+
+    &__error {
+        display: none;
+    }
+
+    &__button {
+        background-color: var(--green);
+
+        color: var(--white);
+        font-size: fonts.$mobile-m;
+        font-weight: fonts.$medium;
+        font-family: fonts.$font-fam;
+
+        border: none;
+        border-radius: 0.5rem;
+
+        box-shadow: var(--button-shadow);
+
+        width: 100%;
+
+        padding: 1rem;
+
+        text-transform: uppercase;
+
+        transition: background-color 50ms;
+    }
+
+    &__terms {
+        font-size: fonts.$mobile-xs;
+        text-align: center;
+        color: var(--light-blue);
+        font-weight: fonts.$medium;
+
+        margin: 1rem 1rem 0;
+
+        &--orange {
+            color: var(--orange);
+            font-weight: fonts.$bold;
+        }
+    }
+}

@@ -5,15 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Page summary">
 
-    <link rel="icon" href="" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="dist/style.css">
 
-    <title>Title</title>
+    <title>Frontend Mentor - Intro Component Signup Form</title>
   </head>
   <body>
     <main>
-      
+      <!-- Learn section -->
+      <section class="section-learn">
+        <h1 class="section-learn__header">Learn to code by watching others</h1>
+        <p class="section-learn__paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
+      </section>
+
+      <!-- Try section -->
+      <div class="section-try">
+        <b>Try it free 7 days</b> then $20/mo. thereafter
+      </div>
+
+      <!-- Form -->
+        <form action="#" method="post" class="form">
+          <input type="text" placeholder="First Name" class="form__input">
+          <span class="form__error">First Name cannot be empty</span>
+
+          <input type="text" placeholder="Last Name" class="form__input">
+          <span class="form__error">Last Name cannot be empty</span>
+
+          <input type="text" placeholder="Email Address" class="form__input">
+          <span class="form__error">Looks like this is not an email</span>
+
+          <input type="text" placeholder="Password" class="form__input">
+          <span class="form__error">Password cannot be empty</span>
+
+          <button type="button" class="form__button">
+            Claim your free trial
+          </button>
+
+          <p class="form__terms">
+            By clicking the button, you are agreeing to our <span class="form__terms--orange">Terms and Services</span>
+          </p>
+        </form>
+
     </main>
-    <!-- <script src="js/main.js"></script> -->
+    <script src="src/js/main.js"></script>
   </body>
 </html>

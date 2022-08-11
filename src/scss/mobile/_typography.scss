@@ -1,0 +1,25 @@
+@use "../util/functions" as util;
+
+// Font family
+$font-fam: "Poppins", sans-serif;
+
+// Font sizes
+$mobile-xl: util.rem(28);
+$mobile-l: util.rem(16);
+$mobile-m: util.rem(15);
+$mobile-s: util.rem(14);
+$mobile-xs: util.rem(11);
+
+// Font weights
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+// Line heights
+$line-l: util.rem(36);
+$line-m: util.rem(26);
+$line-s: util.rem(21);
+
+// Spacing
+$input-spacing: util.rem(0.25);
