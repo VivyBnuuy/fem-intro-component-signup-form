@@ -1,0 +1,7 @@
+@use "../util/functions" as util;
+
+// Font sizes
+$desktop-xl: util.rem(50);
+
+// Line heights
+$line-xl: util.rem(55);
