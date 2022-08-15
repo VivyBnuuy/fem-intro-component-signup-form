@@ -1,0 +1,212 @@
+:root {
+  --orange: #FF7979;
+  --light-orange: #fcadad;
+  --light-green: #77E2B3;
+  --green: #38CC8B;
+  --light-blue: #BAB7D4;
+  --blue: #5E54A4;
+  --dark-gray: #3D3B48;
+  --light-gray: #DEDEDE;
+  --white: #FFFFFF;
+  --shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+  --button-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.09);
+  --button-shadow-active: inset 0px 0px 0px rgba(0, 0, 0, 0.09);
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+.form__button:hover {
+  cursor: pointer;
+  background-color: var(--light-green);
+}
+.form__button:active {
+  box-shadow: var(--button-shadow-active);
+  transform: translateY(4px);
+}
+.form__terms--orange:hover {
+  color: var(--light-orange);
+}
+
+:root {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+body {
+  margin: 0;
+  background-color: var(--orange);
+  background-image: url("../../../images/bg-intro-mobile.png");
+}
+
+main {
+  display: grid;
+  grid-template: repeat(3, -webkit-max-content)/1fr;
+  grid-template: repeat(3, max-content)/1fr;
+  margin: 0 1.5rem;
+}
+
+.section-learn {
+  color: var(--white);
+  text-align: center;
+  margin: 4rem 0 3rem;
+}
+.section-learn__header {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+}
+.section-learn__paragraph {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.section-try {
+  color: var(--white);
+  font-size: 0.9375rem;
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: 0.5rem;
+  padding: 1rem 5rem;
+  margin: 0 0 1.5rem 0;
+  box-shadow: var(--shadow);
+}
+
+.form {
+  display: grid;
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin: 0 0 3rem 0;
+}
+.form__success {
+  color: var(--green);
+  font-weight: 700;
+  text-align: center;
+  display: none;
+}
+.form__input {
+  color: var(--dark-gray);
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.015625rem;
+  opacity: 1;
+  border-style: solid;
+  border-color: var(--light-gray);
+  border-width: 0.0625rem;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  width: calc(100% - 2.1rem);
+  caret-color: var(--blue);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+.form__input:nth-child(1) {
+  margin: 0;
+}
+.form__input::-moz-placeholder {
+  color: var(--dark-gray);
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.015625rem;
+  opacity: 0.75;
+}
+.form__input:-ms-input-placeholder {
+  color: var(--dark-gray);
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.015625rem;
+  opacity: 0.75;
+}
+.form__input::placeholder {
+  color: var(--dark-gray);
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.015625rem;
+  opacity: 0.75;
+}
+.form__error {
+  justify-self: right;
+  font-size: 0.6875rem;
+  color: var(--orange);
+  font-style: italic;
+  font-weight: 500;
+  display: none;
+}
+.form__button {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: var(--button-shadow);
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+  transition: background-color 50ms;
+}
+.form__terms {
+  font-size: 0.6875rem;
+  text-align: center;
+  color: var(--light-blue);
+  font-weight: 500;
+  line-height: 1.3125rem;
+  margin: 1rem 1rem 0;
+}
+.form__terms--orange {
+  color: var(--orange);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+  }
+  main {
+    display: grid;
+    grid-template: repeat(2, -webkit-max-content)/repeat(2, 1fr);
+    grid-template: repeat(2, max-content)/repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    margin: 3rem 1.5rem;
+  }
+  .section-learn {
+    grid-area: 2/1/3/2;
+    margin: 2rem 0 0 0;
+    text-align: left;
+    max-width: 50ch;
+  }
+  .section-learn__header {
+    font-size: 3.125rem;
+    line-height: 3.4375rem;
+  }
+  .section-try {
+    grid-area: 1/2/2/3;
+    max-width: 50ch;
+  }
+  .form {
+    grid-area: 2/2/3/3;
+    margin: 0 0 3rem 0;
+    max-width: 50ch;
+  }
+}
+/*
+@forward "tablet/typography";
+@forward "tablet/breakpoints";
+@forward "tablet/main";
+*//*# sourceMappingURL=style.css.map */
