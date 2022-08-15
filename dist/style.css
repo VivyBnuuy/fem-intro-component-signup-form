@@ -39,7 +39,7 @@
 body {
   margin: 0;
   background-color: var(--orange);
-  background-image: url("../../../images/bg-intro-mobile.png");
+  background-image: url("../images/bg-intro-mobile.png");
 }
 
 main {

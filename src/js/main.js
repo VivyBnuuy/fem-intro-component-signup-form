@@ -22,7 +22,7 @@ function updateInput(e) {
         e.target.style.backgroundImage = "url('')";
     } else {
         e.target.nextElementSibling.style.display = "block";
-        e.target.style.backgroundImage = "url('../../../images/icon-error.svg')";
+        e.target.style.backgroundImage = "url('../images/icon-error.svg')";
     }
 
     // Check if the email entered matches the regular expression
@@ -50,7 +50,7 @@ function verifyForm() {
         // If it has content, remove/do not display those elements
         if (inputNotEmpty != true) {
             formErrors[i].style.display = "block";
-            formInputs[i].style.backgroundImage = "url('../../../images/icon-error.svg')";
+            formInputs[i].style.backgroundImage = "url('../images/icon-error.svg')";
 
             inputValid[i] = false;
         } else {
@@ -64,11 +64,11 @@ function verifyForm() {
     // Check if email is valid with regular expression on submit, display appropriate error message
     if (Boolean(formInputs[2].value) == true && emailVerification == null) {
         formErrors[2].style.display = "block";
-        formInputs[2].style.backgroundImage = "url('../../../images/icon-error.svg')";
+        formInputs[2].style.backgroundImage = "url('../images/icon-error.svg')";
         formErrors[2].innerHTML = "Looks like this is not a valid Email Address";
     } else if (Boolean(formInputs[2].value) == false && emailVerification == null){
         formErrors[2].style.display = "block";
-        formInputs[2].style.backgroundImage = "url('../../../images/icon-error.svg')";
+        formInputs[2].style.backgroundImage = "url('../images/icon-error.svg')";
         formErrors[2].innerHTML = "Email Address cannot be empty";
     }
 
