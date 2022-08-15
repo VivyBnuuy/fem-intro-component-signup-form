@@ -19,4 +19,8 @@
         box-shadow: var(--button-shadow-active);
         transform: translateY(4px);
     }
+
+    &__terms--orange:hover {
+        color: var(--light-orange);
+    }
 }

@@ -28,24 +28,25 @@
 
       <!-- Form -->
         <form action="#" method="post" class="form">
+          <p class="form__success">Free Trial successfully claimed! Please check your inbox.</p>
           <input type="text" placeholder="First Name" class="form__input">
           <span class="form__error">First Name cannot be empty</span>
 
           <input type="text" placeholder="Last Name" class="form__input">
           <span class="form__error">Last Name cannot be empty</span>
 
-          <input type="text" placeholder="Email Address" class="form__input">
-          <span class="form__error">Looks like this is not an email</span>
+          <input type="email" placeholder="Email Address" class="form__input">
+          <span class="form__error">Email Address cannot be empty</span>
 
-          <input type="text" placeholder="Password" class="form__input">
+          <input type="password" placeholder="Password" class="form__input">
           <span class="form__error">Password cannot be empty</span>
 
-          <button type="button" class="form__button">
+          <button type="button" class="form__button" onclick="verifyForm()">
             Claim your free trial
           </button>
 
           <p class="form__terms">
-            By clicking the button, you are agreeing to our <span class="form__terms--orange">Terms and Services</span>
+            By clicking the button, you are agreeing to our <a class="form__terms--orange" href="#">Terms and Services</a>
           </p>
         </form>
 
