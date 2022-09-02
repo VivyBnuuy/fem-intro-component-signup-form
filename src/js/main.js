@@ -20,8 +20,7 @@ function listenInputs() {
 listenInputs();
 
 // Regular expression to make sure email address is valid
-const emailRegExp = /^(?![@.]).*(?<!@.*)(?<![.@])@{1}(?![@.])(?!.*[@*'(),!? _#/$%&;:<>+="\\]).*(?<![.@])\.{1}[a-zA-Z]+$/gu;
-let emailVerification = emailRegExp.exec(formInputs[2].value);
+const emailRegExp = /^(?:(?![@.]).*(?<!@.*)(?<![.@])@{1}(?![@.])(?!.*[@*'(),!? _#/$%&;:<>+="\\]).*(?<![.@])\.{1}[a-zA-Z]+$)/;
 
 // Checks if the input has text in it - Display error message if everything is erased and remove when something is typed
 function updateInput(e) {
@@ -33,8 +32,9 @@ function updateInput(e) {
         e.target.style.backgroundImage = errorIconShow;
     }
 
-    // Check if the email entered matches the regular expression
+    // Check the entered email against the regular expression
     emailVerification = emailRegExp.exec(formInputs[2].value);
+    console.log(emailVerification);
 
     // If the email input is empty, update error message
     if (Boolean(formInputs[2].value) == false) {
