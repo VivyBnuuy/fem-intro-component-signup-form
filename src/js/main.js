@@ -20,7 +20,7 @@ function listenInputs() {
 listenInputs();
 
 // Regular expression to make sure email address is valid
-const emailRegExp = /[^.]+[\u0000-\u0FFF]+[^.@]@{1}[a-zA-Z0-9]+.{1}[a-zA-Z]+$/g;
+const emailRegExp = /^(?![@.]).*(?<!@.*)(?<![.@])@{1}(?![@.])(?!.*[@*'(),!? _#/$%&;:<>+="\\]).*(?<![.@])\.{1}[a-zA-Z]+$/gu;
 let emailVerification = emailRegExp.exec(formInputs[2].value);
 
 // Checks if the input has text in it - Display error message if everything is erased and remove when something is typed
